@@ -1,0 +1,30 @@
+{
+  "name": "splashh",
+  "version": "1.0.0",
+  "description": "Online Random Palette Generator",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hryyhrn/splashh.git"
+  },
+  "author": "hryyhrn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hryyhrn/splashh/issues"
+  },
+  "homepage": "https://github.com/hryyhrn/splashh#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "csurf": "^1.11.0",
+    "dotenv": "^15.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.10"
+  }
+}

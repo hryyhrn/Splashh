@@ -1,0 +1,105 @@
+* {
+    text-align: center;
+    user-select: none;
+    font-family: 'Righteous', cursive;
+}
+
+body {
+    margin: 0%;
+    overflow: hidden;
+    background-color: antiquewhite;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.paintStrip {
+    float: left;
+    width: 0.5vw;
+    min-height: var(--line-height);
+    border-bottom-left-radius: 0.25vw;
+    border-bottom-right-radius: 0.25vw;
+    background-image: linear-gradient(to right, var(--start-colour), var(--end-colour));
+}
+
+.signInOut {
+    position: relative;
+    top: 1vh;
+    float: right;
+    margin: 0.6vmax;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    border-radius: 1vmax;
+    background-color: white;
+    font-size: 2.5vmin;
+    white-space: nowrap;
+    border: none;
+    box-shadow: 0.5vmin 0.5vmin #fdd700;
+}
+
+.paletteIcon {
+    text-align: center;
+    padding-top: 3vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 10vw;
+    filter: drop-shadow(1vmin 1.1vmin 0.275vmin antiquewhite);
+    background: -webkit-linear-gradient(45deg, #eedc82 15%, #fdd700, #ffbf00, #ff5833, #c70039, #900c3f, #581845, #320a28, #190519);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#root {
+    position: relative;
+    filter: url("#goo");
+}
+
+#navbar {
+    position: absolute;
+    top: 0%;
+    width: 100vw;
+    z-index: 1;
+}
+
+#content {
+    position: absolute;
+    top: 0%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}
+
+#container {
+    display: grid;
+    position: relative;
+    top: 20vh;
+    left: 35vw;
+    width: 30vw;
+    grid-template-columns: 1fr;
+    background-color: white;
+    border-radius: 3vmax;
+    box-shadow: 1vmin 1vmin #fdd700;
+}
+
+#introPara {
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+#paletteButton {
+    margin-top: 3vh;
+    padding: 2vmin;
+    font-size: 1.25vw;
+    border-radius: 1.5vmax;
+    background-color: antiquewhite;
+    white-space: nowrap;
+    border: none;
+    box-shadow: 0.25vmin 0.25vmin #fdd700;
+}

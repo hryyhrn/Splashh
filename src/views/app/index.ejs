@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>
+            Splashh | My Page
+        </title>
+        <link rel="icon" href="/icons/palTitle.png" type="image/x-icon">
+        <link rel="stylesheet" href="/styles/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/0d1c5538eb.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!-- top navbar -->
+        <div id="navbar">
+            <a href="home"><i class="fas fa-palette paletteIcon"></i></a>
+            <div id="_csrf" hidden><%= csrfToken %></div>
+            <div class="bubbles" onclick="window.location.href = 'signout';"><div>Sign Out</div></div>
+            <div class="bubbles"><div>My Palettes</div></div>
+        </div>
+
+        <!-- colour display -->
+        <div id="centerColourContainer">
+            <div id="colourContainer">
+                <div class="colours" id="1"><div class="lock" id="l1">LOCK</div></div>
+                <div class="colours" id="2"><div class="lock" id="l2">LOCK</div></div>
+                <div class="colours" id="3"><div class="lock" id="l3">LOCK</div></div>
+                <div class="colours" id="4"><div class="lock" id="l4">LOCK</div></div>
+            </div>
+            
+            <!-- submit palette button -->
+            <button id="randomizePal">Randomize</button>
+            <button id="submitPal">Save Palette</button>
+        </div>
+        
+        <!-- submit name window -->
+        <div id="nameCont">
+            <div id="nameDiv">
+              <span id="closeNameCont">&times;</span>
+              <p>Name Your Palette</p>
+              <input autocomplete="off" type="text" id="nameBar" maxlength="10">
+              <div id="error"></div>
+              <br>
+              <button id="nameSub">Submit</button>
+              <br>
+            </div>
+        </div>
+
+        <!-- palette display -->
+        <div id="palCont">
+            <span id="closePaletteCont">&times;</span>
+            <div id="palHeading">MY PALETTES</div>
+            </div>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <!-- filter for the gooey merging of divs -->
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -5" result="goo" />
+                    <feBlend in="SourceGraphic" in2="goo" />
+                </filter>
+            </defs>
+        </svg>
+    </body>
+
+    <script src="/scripts/script.js"></script>
+</html>

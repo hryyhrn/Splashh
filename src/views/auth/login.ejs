@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+          <title>
+              Splashh | Login
+          </title>
+        <link rel="icon" href="/icons/palTitle.png" type="image/x-icon">
+        <link rel="stylesheet" href="/styles/styleAuth.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="root">
+            <!-- js generated code goes here -->
+        </div>
+        
+        <div id="content">
+          <div id="container">
+            <form autocomplete="off" action="/login" method="POST">
+                <h1>Sign In</h1>
+                <label>Username</label>
+                <input type="text" name="username" class="inputs">
+                <br>
+                <div class="error"><%= usernameErr %></div>
+                <br>
+                <label>Password</label>
+                <input type="password" name="password" class="inputs">
+                <br>
+                <div class="error"><%= passwordErr %></div>
+                <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                <br>
+                <button id="submitButton">Sign In</button>
+                <br>
+                <div id="redirect">Don't have an Account yet? <a href="signup">Sign Up</a></div>
+            </form>
+          </div>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <defs>
+            <!-- filter for the gooey merging of divs -->
+            <filter id="goo">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur" />
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -5" result="goo" />
+              <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+          </defs>
+        </svg>
+    </body>
+    <script src="/scripts/scriptDrip.js"></script>
+</html>

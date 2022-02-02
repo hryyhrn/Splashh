@@ -1,0 +1,82 @@
+* {
+    text-align: center;
+    user-select: none;
+    font-family: 'Righteous', cursive;
+}
+
+body {
+    margin: 0%;
+    overflow: hidden;
+    background-color: antiquewhite;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+label {
+    font-size: 1.25vw;
+}
+
+.paintStrip {
+    float: left;
+    width: 0.5vw;
+    min-height: var(--line-height);
+    border-bottom-left-radius: 0.25vw;
+    border-bottom-right-radius: 0.25vw;
+    background-image: linear-gradient(to right, var(--start-colour), var(--end-colour));
+}
+
+.inputs {
+    padding: 2vmin;
+    font-size: 1.25vw;
+    background-color: #F9F6EE;
+    border-radius: 1.5vmax;
+}
+
+.error {
+    margin: 1vmin;
+    font-size: 0.8vw;
+    color: #d2042d;
+}
+
+#root {
+    position: relative;
+    filter: url("#goo");
+}
+
+#content {
+    position: absolute;
+    top: 0%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}
+
+#container {
+    position: relative;
+    top: 20vh;
+    left: 35vw;
+    width: 30vw;
+    padding: 0.5vmin;
+    background-color: white;
+    border-radius: 3vmax;
+    box-shadow: 1vmin 1vmin #fdd700;
+    white-space: nowrap;
+}
+
+#redirect {
+    color: grey;
+    font-size: 1vw;
+    margin: 3vmin;
+}
+
+#submitButton {
+    padding: 2vmin;
+    font-size: 1.25vw;
+    border-radius: 1.5vmax;
+    background-color: antiquewhite;
+    white-space: nowrap;
+    border: none;
+    box-shadow: 0.25vmin 0.25vmin #fdd700;
+}
