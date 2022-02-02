@@ -39,6 +39,8 @@ module.exports.savePalette = async (req, res) => {
     .catch((error) => {
         if(error['code'] == '11000')
             res.send('Palette with the same name exists!');
+        else if(error.message == 'empty')
+            res.send('Palette name cannot be empty!');
         else {
             console.error('Error:', error);
             res.redirect('error-message');
