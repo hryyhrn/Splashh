@@ -8,7 +8,7 @@ const paletteSchema = new Schema({
     },
     paletteName: {
         type: String,
-        required: [true, 'empty'],
+        required: [true, 'Palette name cannot be empty!'],
         maxlength: 10
     },
     colour1: {
