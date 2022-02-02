@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hryyhrn/splashh.git"
+    "url": "git+https://github.com/hryyhrn/Splashh.git"
   },
   "author": "hryyhrn",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hryyhrn/splashh/issues"
+    "url": "https://github.com/hryyhrn/Splashh/issues"
   },
-  "homepage": "https://github.com/hryyhrn/splashh#readme",
+  "homepage": "https://github.com/hryyhrn/Splashh#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "cookie-parser": "^1.4.6",
